@@ -3,13 +3,17 @@
 % Data Science
 % Script para analisar a proporção dos paises
 
+%Cria tabela com paises na primeira colouna e numero de concorrencia na
+%segunda
 tbl = tabulate(contry_of_res)
 
 codelines = cell2mat(tbl(:,2));
 coders = char(tbl(:,1));
 
 figure
-pareto(codelines, coders)
+pareto(codelines, coders)%plota o grafico com quantidade dos paises
+%Obs.: Devido o numero de paises presente pode ser enteressante visualizar
+%estes dados em mais de um grafico
 title('Distribuição por Paises')
 xlabel('Paises')
 ylabel('Quantidade')
