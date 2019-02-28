@@ -5,10 +5,10 @@
 
 %Cria tabela com paises na primeira colouna e numero de concorrencia na
 %segunda
-tbl = tabulate(contry_of_res)
+tabela1 = tabulate(contry_of_res)
 
-codelines = cell2mat(tbl(:,2));
-coders = char(tbl(:,1));
+codelines = cell2mat(tabela1(:,2));
+coders = char(tabela1(:,1));
 
 figure
 pareto(codelines, coders)%plota o grafico com quantidade dos paises
