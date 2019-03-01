@@ -17,10 +17,18 @@
 2.Dataset
 ==========
 
-<p>O dataset conta com 292 participantes de diversos paises, os quais passarão por uma espécie de entrevista de formaa avaliar alguns aspectos comportamentais. O dataset traz a idade, o genêro, etinia, se o paciente tem Icteria, se o mesmo tem parente autista, pais de residencia e as reposta do seguinte questionario:<p/>
+<p>O dataset conta com 292 participantes de diversos países, os quais passaram por uma espécie de entrevista para avaliar alguns aspectos comportamentais. O dataset contém a idade, o genêro, etinia, pais de residencia, se o paciente tem Icteria, se o mesmo tem parente autista e as reposta do seguinte questionario:<p/>
 
 <p>*Alta percepção em baixos ruídos que geralmente outros não percebem;<p/>
 <p>*Maior concentração na visão do todo em comparação a pequenos detalhes;<p/>
+<p>*Facilidade de comunicação com várias pessoas diferentes ao mesmo tempo;<p/>
+<p>*Facilidade de fazer múltiplas tarefas simultaneamente;<p/>
+<p>*Dificuldade de manter uma conversa com seus colegas;<p/>
+<p>*Facilidade em manter conversas informais;<p/>
+<p>*Dificuldade de percepção de intenções e sentimentos em histórias durante a leitura;<p/>
+<p>*Dificuldade de fingir ser outro alguém, empatia deficitária;<p/>
+<p>*Facilidade de reconhecer sentimentos a partir de expressões faciais alheias;<p/>
+<p>*Dificuldade de fazer novas amizades;<p/>
 
 3.Analise realizada
 ==========
