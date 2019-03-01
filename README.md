@@ -19,6 +19,11 @@
 
 <p>O dataset conta com 292 participantes de diversos paises, os quais passarão por uma espécie de entrevista de formaa avaliar alguns aspectos comportamentais. Os participantes tem de 4 à 11 anos, residem em diversos países.<p/>
 
+3.Analise realizada
+==========
+
+<p>Operações realizadas...<p/>
+
 3.Resultado/Conclusões
 ==========
 
