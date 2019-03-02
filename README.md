@@ -33,8 +33,10 @@
 3.Analise realizada
 ==========
 
-<p>Operações realizadas...<p/>
+<p>Foram criados dois scripts, um analisando algumas caracteristicas para todos os participantes e outro fazendo uma analise separada para autistas e não-autistas.<p/>
 
+<p>O primeiro script chamado "Participantes.m" realiza as seguintes tarefas:
+*Calcula e exibe a proporção de genero dos participantes;.<p/>
 3.Resultado/Conclusões
 ==========
 
