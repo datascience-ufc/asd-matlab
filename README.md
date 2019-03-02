@@ -36,14 +36,15 @@
 <p>Foram criados dois scripts, um analisando algumas caracteristicas para todos os participantes e outro fazendo uma analise separada para autistas e não-autistas.<p/>
 
 <p>O primeiro script chamado "Participantes.m" realiza as seguintes tarefas:<p/>
-<br>
+
 
 <p>*Calcula e exibe a proporção de genero dos participantes;<p/>
 <p>*Calcula e exibe a proporção de paises dos participantes;<p/>
 <p>*Calcula e exibe a proporção de participantes que possuem parente autista.<p/>
 
-<br>
+
 <p>O segundo script chamado "Autistas.m" realiza as seguintes tarefas:<p/>
+
 
 <p>*Calcula e exibe a proporção de genero dos autistas;<p/>
 <p>*Calcula e exibe a proporção de paises dos autistas;<p/>
