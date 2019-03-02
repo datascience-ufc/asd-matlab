@@ -3,6 +3,8 @@
 % Data Science
 % Script para analisar os participantes que possuem Autismo
 
+load dataset.mat %carrega o dataset
+
 %Verificar quais participantes possuem autismo
 j=1;z=1;num_Amostras=length(ClassASD); %Variaveis auxiliares
 for i=1:num_Amostras %para todos os participantes
@@ -19,59 +21,47 @@ end
 %Sexo dos Autistas
 %Seçao para analisar caracteristicas relacionando o genero
 
-f=0;m=0; %contador feminino e masculino
-tam=length(Autista); %numero de autistas
-
-for i=1:tam %para todos os autistas
-    if isequal(gender(Autista(i)),'m' ) %se o Autista for masculino
-        m = m+1; %incrementa m
-    else
-        if isequal(gender(Autista(i)),'f' ) %se o Autista for feminino
-            f=f+1; %incrementa m
-        end
-    end
-end
+tabela1 = tabulate(gender(Autista,:));
 %Neste ponto sabemos a proporção do sexo dos Autistas
 
-fprintf('A percentagem de Autistas do sexo feminino é: %.2f\n',f*100/tam);%exibe o percentual
-fprintf('A percentagem de Autistas do sexo masculino é: %.2f\n',m*100/tam);%exibe o percentual
+fprintf('A percentagem de autistas do sexo feminino é: %.2f\n',cell2mat(tabela1(2,3)));%exibe o percentual
+fprintf('A percentagem de autistas do sexo masculino é: %.2f\n',cell2mat(tabela1(1,3)));%exibe o percentual
 
-codelines = [m f];
+codelines = cell2mat(tabela1(:,2));
 coders = {'Masculino','Feminino'};
-
 figure
-pareto(codelines, coders) %plota o grafico com quantidade e percentagem de sexo dos Autistas
-title('Participante Autistas')
+pareto(codelines, coders) %plota o grafico com quantidade e percentagem
+title('Autistas')
 
 %Paises dos Autistas
 %Seçao para analisar caracteristicas relacionando o pais de residencia
 
 %Cria tabela com paises na primeira colouna e numero de concorrencia na
 %segunda
-tabela3 = tabulate(contry_of_res);
+tabela2 = tabulate(contry_of_res(Autista,:));
 %Neste ponto a proporção dos paises dos autistas
 
-codelines = cell2mat(tabela3(:,2));
-coders = char(tabela3(:,1));
+codelines = cell2mat(tabela2(:,2));
+coders = char(tabela2(:,1));
 
 figure
 pareto(codelines, coders)%plota o grafico com quantidade dos paises
 %Obs.: Devido o numero de paises presente pode ser enteressante visualizar
 %estes dados em mais de um grafico
-title('Autistas por Paises')
+title('Autistas')
 xlabel('Paises')
 ylabel('Quantidade')
 
 %Parentesco dos Autistas
 %Seçao para verificar se o autista possui algum parente com autismo
 
-tabela4 = tabulate(austim(Autista,:));
+tabela3 = tabulate(austim(Autista,:));
 %Neste ponto quais autistas possuem parente autista
 
-fprintf('A percentagem de Autistas que possuim parente autista é: %.2f\n',cell2mat(tabela4(2,3)));%exibe o percentual
-fprintf('A percentagem de Autistas que não possuim parente autista é: %.2f\n',cell2mat(tabela4(1,3)));%exibe o percentual
+fprintf('A percentagem de Autistas que possuim parente autista é: %.2f\n',cell2mat(tabela3(2,3)));%exibe o percentual
+fprintf('A percentagem de Autistas que não possuim parente autista é: %.2f\n',cell2mat(tabela3(1,3)));%exibe o percentual
 
-codelines = [cell2mat(tabela4(2,3)) cell2mat(tabela4(1,3))];
+codelines = [cell2mat(tabela3(2,2)) cell2mat(tabela3(1,2))];
 coders = {'Parente-Autista','sem Parente-Autista'};
 
 figure
@@ -80,13 +70,13 @@ title('Autista')
 
 %Seçao para verificar se o nao-autista possui algum parente com autismo
 
-tabela5 = tabulate(austim(naoAutista,:));
+tabela4 = tabulate(austim(naoAutista,:));
 %Neste ponto quais noa-autistas possuem parente autista
 
-fprintf('A percentagem de não-Autistas que possuim parente autista é: %.2f\n',cell2mat(tabela5(2,3)));%exibe o percentual
-fprintf('A percentagem de não-Autistas que não possuim parente autista é: %.2f\n',cell2mat(tabela5(1,3)));%exibe o percentual
+fprintf('A percentagem de não-Autistas que possuim parente autista é: %.2f\n',cell2mat(tabela4(2,3)));%exibe o percentual
+fprintf('A percentagem de não-Autistas que não possuim parente autista é: %.2f\n',cell2mat(tabela4(1,3)));%exibe o percentual
 
-codelines = [cell2mat(tabela5(2,3)) cell2mat(tabela5(1,3))];
+codelines = [cell2mat(tabela4(2,2)) cell2mat(tabela4(1,2))];
 coders = {'Parente-Autista','sem Parente-Autista'};
 
 figure
@@ -97,13 +87,13 @@ title('Não-Autista')
 %Doença de pigmentação Icteria
 %Seçao para verificar se o autista tem Icteria
 
-tabela6 = tabulate(jundice(Autista,:));
+tabela5 = tabulate(jundice(Autista,:));
 %Neste ponto sabemos a proporção Autistas que possuem Icteria
 
-fprintf('A percentagem de Autistas que possuim Icteria é: %.2f\n',cell2mat(tabela6(1,3)));%exibe o percentual
-fprintf('A percentagem de Autistas que não possuim Icteria é: %.2f\n',cell2mat(tabela6(2,3)));%exibe o percentual
+fprintf('A percentagem de Autistas que possuim Icteria é: %.2f\n',cell2mat(tabela5(1,3)));%exibe o percentual
+fprintf('A percentagem de Autistas que não possuim Icteria é: %.2f\n',cell2mat(tabela5(2,3)));%exibe o percentual
 
-codelines = [cell2mat(tabela6(2,3)) cell2mat(tabela6(1,3))];
+codelines = [cell2mat(tabela5(2,2)) cell2mat(tabela5(1,2))];
 coders = {'sem Icteria','com Icteria'};
 
 figure
@@ -112,13 +102,13 @@ title('Autistas')
 
 %Seçao para verificar se o nao-autista tem Icteria
 
-tabela7 = tabulate(jundice(naoAutista,:));
+tabela6 = tabulate(jundice(naoAutista,:));
 %Neste ponto sabemos a proporção nao-Autistas que possuem Icteria
 
-fprintf('A percentagem de não-autistas que possuim Icteria é: %.2f\n',cell2mat(tabela7(2,3)));%exibe o percentual
-fprintf('A percentagem de não-autistas que não possuim Icteria é: %.2f\n',cell2mat(tabela7(1,3)));%exibe o percentual
+fprintf('A percentagem de não-autistas que possuim Icteria é: %.2f\n',cell2mat(tabela6(2,3)));%exibe o percentual
+fprintf('A percentagem de não-autistas que não possuim Icteria é: %.2f\n',cell2mat(tabela6(1,3)));%exibe o percentual
 
-codelines = [cell2mat(tabela7(1,3)) cell2mat(tabela7(2,3))];
+codelines = [cell2mat(tabela6(1,2)) cell2mat(tabela6(2,2))];
 coders = {'sem Icteria','com Icteria'};
 
 figure
