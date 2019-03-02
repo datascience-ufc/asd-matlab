@@ -35,9 +35,12 @@
 
 <p>Foram criados dois scripts, um analisando algumas caracteristicas para todos os participantes e outro fazendo uma analise separada para autistas e não-autistas.<p/>
 
-<p>O primeiro script chamado "Participantes.m" realiza as seguintes tarefas:
-*Calcula e exibe a proporção de genero dos participantes;.<p/>
-3.Resultado/Conclusões
+<p>O primeiro script chamado "Participantes.m" realiza as seguintes tarefas:<p/>
+<p>*Calcula e exibe a proporção de genero dos participantes;.<p/>
+<p>Calcula e exibe a proporção de paises dos participantes;<p/>
+<p>*Calcula e exibe a proporção de participantes que possuem parente autista.<p/>
+
+4.Resultado/Conclusões
 ==========
 
 <p>Este dataset permite concluir que...<p/>
