@@ -19,16 +19,16 @@
 
 <p>O dataset conta com 292 participantes de diversos países, os quais passaram por uma espécie de entrevista para avaliar alguns aspectos comportamentais. O dataset contém a idade, o genêro, etinia, pais de residencia, se o paciente tem Icteria, se o mesmo tem parente autista e as reposta do seguinte questionario:<p/>
 
-<p>*Alta percepção em baixos ruídos que geralmente outros não percebem;<p/>
-<p>*Maior concentração na visão do todo em comparação a pequenos detalhes;<p/>
-<p>*Facilidade de comunicação com várias pessoas diferentes ao mesmo tempo;<p/>
-<p>*Facilidade de fazer múltiplas tarefas simultaneamente;<p/>
-<p>*Dificuldade de manter uma conversa com seus colegas;<p/>
-<p>*Facilidade em manter conversas informais;<p/>
-<p>*Dificuldade de percepção de intenções e sentimentos em histórias durante a leitura;<p/>
-<p>*Dificuldade de fingir ser outro alguém, empatia deficitária;<p/>
-<p>*Facilidade de reconhecer sentimentos a partir de expressões faciais alheias;<p/>
-<p>*Dificuldade de fazer novas amizades;<p/>
+<p>1.Alta percepção em baixos ruídos que geralmente outros não percebem;<p/>
+<p>2.Maior concentração na visão do todo em comparação a pequenos detalhes;<p/>
+<p>3.Facilidade de comunicação com várias pessoas diferentes ao mesmo tempo;<p/>
+<p>4.Facilidade de fazer múltiplas tarefas simultaneamente;<p/>
+<p>5.Dificuldade de manter uma conversa com seus colegas;<p/>
+<p>6.Facilidade em manter conversas informais;<p/>
+<p>7.Dificuldade de percepção de intenções e sentimentos em histórias durante a leitura;<p/>
+<p>8.Dificuldade de fingir ser outro alguém, empatia deficitária;<p/>
+<p>9.Facilidade de reconhecer sentimentos a partir de expressões faciais alheias;<p/>
+<p>10.Dificuldade de fazer novas amizades;<p/>
 
 3.Analise realizada
 ==========
@@ -51,7 +51,7 @@
 <p>*Calcula e exibe a proporção de autistas que possuem parente autista.<p/>
 <p>*Calcula e exibe a proporção de não-autistas que possui parente autista;<p/>
 <p>*Calcula e exibe a proporção de autistas que possuem Icteria;<p/>
-<p>*Calcula e exibe a proporção de não-autistas que possuem Icteria;<p/>
+<p>*Calcula e exibe a proporção de não-autistas que possuem Icteria.<p/>
 
 4.Resultado/Conclusões
 ==========
